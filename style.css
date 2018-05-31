@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+div {
+    margin: auto;
+}
+
 header {
     display: flex;
     height: 69px;
@@ -47,8 +51,10 @@ li {
 }
 
 .featured {
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .locations {
@@ -70,3 +76,7 @@ footer {
     width: 300px;
 }
 
+.loc_box {
+    width: 300px;
+    background-color: black;
+}
