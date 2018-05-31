@@ -15,6 +15,13 @@ header {
     background-color: black;
     z-index: 1;
     width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    position: relative;
+    left: 10px;
 }
 
 nav ul {
@@ -48,6 +55,7 @@ li {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
     height: 500px;
     width: 1200px;
