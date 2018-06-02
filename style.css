@@ -7,15 +7,12 @@ body {
     text-align: center;
 }
 
-div {
-    margin: auto;
-}
-
 header {
     display: flex;
     height: 69px;
     border-bottom: 1px solid seashell;
     position: fixed;
+    top: 0;
     background-color: black;
     z-index: 1;
     width: 100%;
@@ -24,18 +21,25 @@ header {
 }
 
 header img {
-    position: relative;
-    left: 10px;
+  height: 50px;
+}
+
+nav {
+  margin-right: 10px;
 }
 
 nav ul {
     list-style-type: none;
 }
 
-li {
-    display: inline;
+a {
+  color: white;
 }
 
+li {
+    display: inline;
+    text-decoration: underline;
+}
 
 .mission {
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
@@ -43,6 +47,7 @@ li {
     width: 1000px;
     display: flex;
     align-items: center;
+    margin: auto;
 }
 
 .insert {
@@ -53,19 +58,22 @@ li {
 .featured {
     width: 1000px;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    margin: auto;
 }
 
 .locations {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
     height: 500px;
     width: 1200px;
+    margin: auto;
 }
 
 footer {
@@ -75,9 +83,20 @@ footer {
 .featured img {
     height: 200px;
     width: 300px;
+    margin: 10px;
 }
 
 .loc_box {
     width: 300px;
+    margin: 10px;
     background-color: black;
+
+}
+
+.contact {
+  height: 200px;
+}
+
+.locations h2 {
+  width: 100%;
 }
